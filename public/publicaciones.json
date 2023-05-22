@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Reiki",
+    "user": "reiki@gmail.com",
+    "description": "Equilibrio energético a nivel físico, mental y energético",
+    "price": "$10.000",
+    "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/portada-reiki-gettyimages-1673362958.jpeg"
+  },
+  {
+    "title": "Tarot",
+    "user": "tarot@gmail.com",
+    "description": "Tarot terapéutico para ver el panorama actual",
+    "price": "$7.000",
+    "img": "https://www.clarin.com/img/2023/01/11/como-el-arte-de-la___FB5yq5-Dw_2000x1500__1.jpg"
+  },
+  {
+    "title": "Arteterapia",
+    "user": "arteterapia@gmail.com",
+    "description": "Sesiones grupales a pasos del metro Irarrázaval",
+    "price": "$30.000",
+    "img": "https://okdiario.com/img/bebes/2017/11/14/las-claves-de-la-arteterapia.jpg"
+  }
+]

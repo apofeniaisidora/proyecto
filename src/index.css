@@ -1,0 +1,24 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.navbar {display: flex; justify-content: space-between;}
+
+.menu {gap: 1em;}
+
+.imagenheader {
+  background: url("https://img.freepik.com/foto-gratis/marco-vista-superior-fondo-estuco_23-2148290924.jpg?w=826&t=st=1683931447~exp=1683932047~hmac=a480d31b7c52359ef24645b030b8113203b4ee22d68e63f09af2246e9e3176e0") no-repeat center;
+  min-height: 60vh; 
+  min-width: 100%;
+  background-size: contain;
+}
+
+.formulario {
+  display: flex; flex-direction: column;
+}
+
+.botonformulario {
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
