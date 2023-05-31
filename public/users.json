@@ -1,10 +1,17 @@
 [
+  { "id": 1,
+    "email": "test@test.com",
+    "password": "123123",
+    "avatarSRC": "https://imagenes.elpais.com/resizer/fxhoh02jmpZiO0Z8WTeoXUknWGQ=/414x311/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/2QPALCTLQWN4NED7IOZJVOGAFM.jpg"
+  },
   {
+    "id": 2,
     "email": "reiki@gmail.com",
     "password": "pruebareiki",
     "avatarSRC": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlQoRaTgziSvhNEFyiH0pR5oMAzPRM3bxDL8Y8aWoniDfsfT1Iifi4DUWdiouC1Q2kvAU&usqp=CAU"
   },
   {
+    "id": 3,
     "email": "tarot@gmail.com",
     "password": "pruebatarot",
     "avatarSRC": "https://imagenes.elpais.com/resizer/fxhoh02jmpZiO0Z8WTeoXUknWGQ=/414x311/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/2QPALCTLQWN4NED7IOZJVOGAFM.jpg"
