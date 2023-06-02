@@ -14,6 +14,13 @@ const Dashboard = () => {
   const [price, setPrice] = useState("");
   const [img, setImg] = useState("");
 
+  const clearForm = () => {
+    setTitle("");
+    setDescription("");
+    setPrice("");
+    setImg("");
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const newService = {
@@ -25,7 +32,10 @@ const Dashboard = () => {
       id: Date.now(),
     };
     createService(newService);
+    clearForm();
   };
+
+
 
   return (
     <div>

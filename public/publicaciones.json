@@ -1,23 +1,74 @@
 [
-  { "title": "Reiki",
+  {
+    "title": "Reiki",
     "user": "reiki@gmail.com",
     "description": "Equilibrio energético a nivel físico, mental y energético",
     "price": "$10.000",
     "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/portada-reiki-gettyimages-1673362958.jpeg",
-    "id" : 1
+    "id": 1
   },
-  { "title": "Tarot",
+  {
+    "title": "Tarot",
     "user": "tarot@gmail.com",
     "description": "Tarot terapéutico para ver el panorama actual",
     "price": "$7.000",
     "img": "https://www.clarin.com/img/2023/01/11/como-el-arte-de-la___FB5yq5-Dw_2000x1500__1.jpg",
-    "id" : 2
+    "id": 2
   },
-  { "title": "Arteterapia",
-    "user": "arteterapia@gmail.com",
+  {
+    "title": "Arteterapia",
+    "user": "tarot@gmail.com",
     "description": "Sesiones grupales a pasos del metro Irarrázaval",
     "price": "$30.000",
     "img": "https://okdiario.com/img/bebes/2017/11/14/las-claves-de-la-arteterapia.jpg",
-    "id" : 3
+    "id": 3
+  },
+  {
+    "title": "Yoga",
+    "user": "reiki@gmail.com",
+    "description": "Clases de Yoga diseñadas para expandir tu mente, nutrir tu cuerpo y elevar tu alma",
+    "price": "$5.000",
+    "img": "https://www.yogatalca.cl/wp-content/uploads/2022/06/shutterstock_125340167-scaled.jpg",
+    "id": 4
+  },
+  {
+    "title": "Acupuntura",
+    "user": "medicinachina@gmail.com",
+    "description": "Terapia de Medicina China que implica la estimulación de puntos específicos del cuerpo, generalmente introduciendo agujas muy finas en la piel y en los tejidos subyacentes",
+    "price": "$25.000",
+    "img": "https://staticnew-prod.topdoctors.cl/files/Image/large/f89be0d1b452e74dc53d497742b21d71.jpg",
+    "id": 5
+  },
+  {
+    "title": "Auriculoterapia",
+    "user": "medicinachina@gmail.com",
+    "description": "Una medicina alternativa útil para diagnosticar y tratar enfermedades emocionales, manejo del dolor en articulaciones ",
+    "price": "$8.000",
+    "img": "https://i0.wp.com/blog.portaleducacao.com.br/wp-content/uploads/2022/03/Auriculoterapia-Conheca-os-pontos.jpg",
+    "id": 6
+  },
+  {
+    "title": "Masajes",
+    "user": "reiki@gmail.com",
+    "description": "Masajes terapéuticos para relajar, reducir dolores y aliviar lesiones",
+    "price": "15.000",
+    "img": "https://media.glamour.mx/photos/639a41b1164421ef16706ce8/master/pass/aceites_esenciales_para_masajes.jpg",
+    "id": 7
+  },
+  {
+    "title": "Reflexología",
+    "user": "reiki@gmail.com",
+    "description": "Práctica manual terapéutica basada en la estimulación de puntos reflejos situados en diferentes partes del cuerpo.",
+    "price": "15.000",
+    "img": "https://www.ecoportal.net/wp-content/uploads/2020/02/reflexologia-rdn.jpg",
+    "id": 8
+  },
+  {
+    "title": "Psicología",
+    "user": "tarot@gmail.com",
+    "description": "Sesiones individuales donde a través de diversas herramientas y ejercicios terapéuticos optimizamos el estado actual de la persona",
+    "price": "17.000",
+    "img": "https://www.seguridad-laboral.es/wp-content/uploads/sites/6/2021/02/psicologia-seguridad-del-trabajo-900x600.jpg",
+    "id": 9
   }
 ]

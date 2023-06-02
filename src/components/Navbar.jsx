@@ -14,7 +14,9 @@ export default function Navbar() {
           {user ? (
             <>
               <NavLink to="/dashboard">Dashboard</NavLink>
-              <button onClick={logout}>Cerrar sesión</button>
+              <NavLink to="/favoritos"><img src="heart-solid.svg" className="iconocorazon"/>1</NavLink>
+              <NavLink to="/profile">Profile</NavLink>
+              <button onClick={logout} className="green">Cerrar sesión</button>
             </>
           ) : (
             <>

@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2'
 import { useState } from "react";
 import { useContext } from "react";
 import { UserContext } from "../context/userContext";
@@ -10,16 +11,20 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email, password);
-    const user = await login(email, password);
+    const user = login(email, password);
     if (user) {
       setEmail("");
       setPassword("");
       return navigate("/dashboard");
     }
-    alert ("datos incorrectos")
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Datos incorrectos!',
+    })
   };
 
   return (
@@ -44,7 +49,7 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
-        <button type="submit" className="botonformulario">
+        <button type="submit" className="boton green">
           Ingresar
         </button>
       </form>

@@ -1,46 +1,36 @@
 import Swal from "sweetalert2";
+import React, { useContext, useEffect } from "react";
+import { useState } from "react";
 import { UserContext } from "../context/userContext";
-import "../index.css";
-import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
-export default function Registro() {
-  const navigate = useNavigate();
-  const { register } = useContext(UserContext);
+const Profile = () => {
+  const { user, updateUser } = useContext(UserContext);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [repassword, setRepassword] = useState("");
+
+  useEffect(() => {
+    setName(user.name);
+    setEmail(user.email);
+    setPassword(user.password);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (password !== repassword) {
-      return alert("no coinciden las contraseñas");
-    }
-
-    const user = register({
-      name,
-      email,
-      password,
-      id: Date.now(),
+    updateUser({
+      email: email,
+      name: name,
+      password: password,
+      id: user.id,
     });
 
-    if (user) {
-      return Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'El email ya está registrado!',
-      });
-    }
-
-    navigate("/dashboard");
+    Swal.fire("Datos actualizados");
   };
 
   return (
     <div>
-      <h1>Regístrate</h1>
+      <h1>Profile</h1>
       <form className="formulario" onSubmit={handleSubmit}>
         <label>
           Nombre
@@ -69,19 +59,12 @@ export default function Registro() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
-        <label>
-          Repita su contraseña
-          <input
-            type="password"
-            placeholder="Repetir contraseña"
-            value={repassword}
-            onChange={(e) => setRepassword(e.target.value)}
-          />
-        </label>
-        <button type="submit" className="boton green">
-          Registrar
+        <button type="submit" className="botonformulario green">
+          Actualizar
         </button>
       </form>
     </div>
   );
-}
+};
+
+export default Profile;
