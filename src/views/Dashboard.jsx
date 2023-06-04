@@ -73,12 +73,12 @@ const Dashboard = () => {
         {servicios
           .filter((servicio) => servicio.user === user.email)
           .map((servicio) => (
-            <article key={servicio.id}>
+            <article key={servicio.id} className="card">
               <h2>{servicio.title}</h2>
               <img src={servicio.img} alt="" className="imagencard" />
               <p>{servicio.description}</p>
               <h4>{servicio.price}</h4>
-              <button onClick={() => deleteService(servicio.id)}>Eliminar</button>
+              <button onClick={() => deleteService(servicio.id)} className="boton">Eliminar</button>
               <Link to={`/update/${servicio.id}`}>Editar</Link>
             </article>
           ))}

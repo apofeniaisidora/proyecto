@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import Header from "../components/Header";
 import "../index.css";
 import { ServiceContext } from "../context/ServiceContext";
+import ServiceCard from "../components/ServiceCard";
 
 export default function Home() {
   const { servicios } = useContext(ServiceContext);
@@ -10,12 +11,13 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <h1>Galería</h1>
+      <h1>TERAPIAS DISPONIBLES</h1> 
       <input
         type="text"
         placeholder="Buscar..."
         value={searchText}
         onChange={(e) => setSearchText(e.target.value)}
+        className="buscador"
       />
       <div className="grupocard">
         {servicios
@@ -23,13 +25,7 @@ export default function Home() {
             servicio.title.toLowerCase().includes(searchText.toLowerCase())
           )
           .map((servicio) => (
-            <article key={servicio.id} className="card">
-              <img src={servicio.img} alt="" className="imagencard" />
-              <h3>{servicio.title}</h3>
-              <p>{servicio.description}</p>
-              <h4>{servicio.price}</h4>
-              <button className="green boton">Contactar</button>
-            </article>
+            <ServiceCard key={servicio.id} servicio={servicio}/>
           ))}
       </div>
     </div>

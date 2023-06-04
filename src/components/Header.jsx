@@ -4,11 +4,11 @@ export default function Header() {
   return (
     <div>
       <header>
-        <div className="imagenheader">
+        <div className="imagenheader header">
           <h1 className="tituloheader">Terapias</h1>
-          <p>Hola</p>
         </div>
       </header>
     </div>
+    
   );
 }

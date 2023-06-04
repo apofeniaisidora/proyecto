@@ -35,9 +35,10 @@ a:active {
 }
 
 .imagenheader {
-  background: url("https://p4.wallpaperbetter.com/wallpaper/506/48/29/forest-cool-pc-wallpaper-preview.jpg");
-  min-height: 60vh;
+  background: url("https://cdn.pixabay.com/photo/2018/07/28/17/15/nature-3568530_1280.jpg");
+  min-height: 40vh;
   background-size: cover;
+  background-position: center;
 }
 
 h1 {
@@ -84,6 +85,16 @@ h1 {
   display: flex;
 }
 
+.buscador {
+  width: 20em;
+  padding: 1em;
+}
+
+.botonlike {
+  width: 1.5em;
+  align-items: center;
+}
+
 .footer {
   background-color: #6643bf;
   padding: 1em;
@@ -92,4 +103,8 @@ h1 {
 
 .green {
   background-color: #64a64c;
+}
+
+.botonguardar:disabled {
+ display: none;
 }
