@@ -73,6 +73,7 @@ export default function Registro() {
         <button type="submit" className="boton green">
           Registrar
         </button>
+        <br></br>
       </form>
     </div>
   );

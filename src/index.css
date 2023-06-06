@@ -28,6 +28,7 @@ body {
 }
 a {
   color: white;
+  text-decoration: none;
 }
 a:visited {
   color: white;
@@ -37,12 +38,12 @@ a:visited {
 a:hover {
   color: black; 
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:active {
   color:#a286eb;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .menu {
@@ -51,7 +52,7 @@ a:active {
 
 .imagenheader {
   background: url("https://cdn.pixabay.com/photo/2015/07/10/16/05/purple-flowers-839594_1280.jpg");
-  min-height: 50vh;
+  min-height: 30vh;
   background-size: cover;
   background-position: center;
   margin-top: 0;
@@ -140,9 +141,15 @@ p {
 
 .imagencard {
   max-width: 15em;
+  margin: 1em;
   border-radius: 5%;
 }
 
 .botonguardar {
   background-color: #663985;
+}
+
+.mensajes {
+  width: 20em;
+  height: 9em;
 }

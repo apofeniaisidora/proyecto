@@ -6,6 +6,7 @@ import Login from "./views/Login";
 import Registro from "./views/Registro";
 import Dashboard from "./views/Dashboard";
 import Update from "./views/Update";
+import Mensaje from "./views/Mensaje";
 
 import { Route, Routes, Navigate } from "react-router-dom";
 import { useContext } from "react";
@@ -46,8 +47,9 @@ const App = () => {
             element={user ? <Update /> : <Navigate to="/login" />}
           />
           <Route path="*" element={<Error />} />
+          <Route path="/mensaje" element={<Mensaje />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
