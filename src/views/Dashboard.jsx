@@ -39,46 +39,52 @@ const Dashboard = () => {
 
   return (
     <div>
-      <h1>Dashboard</h1>
-      <h1>Bienvenido {user.name}</h1>
-      <form className="formdashboard" onSubmit={handleSubmit}>
+      <h1>Bienvenido {user.name} sube o revisa tus publicaciones!</h1>
+      <form className="formulario" onSubmit={handleSubmit}>
+        Título
         <input
           type="text"
-          placeholder="title"
+          placeholder="Título"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
+        Descripción
         <input
           type="text"
-          placeholder="description"
+          placeholder="Descripción"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
+        Precio
         <input
           type="text"
-          placeholder="price"
+          placeholder="Precio"
           value={price}
           onChange={(e) => setPrice(e.target.value)}
         />
+        URL de imagen
         <input
           type=""
-          placeholder="img url"
+          placeholder="URL de imagen"
           value={img}
           onChange={(e) => setImg(e.target.value)}
         />
-        <button type="submit">Agregrar</button>
+        <button type="submit" className="boton green">Agregrar</button>
+        <br></br>
       </form>
 
-      <div>
+      <div className="contenedorcard">
         {servicios
           .filter((servicio) => servicio.user === user.email)
           .map((servicio) => (
             <article key={servicio.id} className="card">
               <h2>{servicio.title}</h2>
+              <br></br>
               <img src={servicio.img} alt="" className="imagencard" />
               <p>{servicio.description}</p>
               <h4>{servicio.price}</h4>
               <button onClick={() => deleteService(servicio.id)} className="boton">Eliminar</button>
+              <br></br>
               <Link to={`/update/${servicio.id}`}>Editar</Link>
             </article>
           ))}

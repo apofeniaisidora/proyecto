@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import Swal from 'sweetalert2'
 import { Navigate } from "react-router-dom";
 
 export const UserContext = createContext();
@@ -55,6 +56,7 @@ const UserProvider = ({ children }) => {
     if (userDB) return true;
     setUser(user);
     setUsers([...users, user]);
+    Swal.fire('Usuario guardado, comienza a navegar')
   };
 
   const logout = () => {
@@ -68,6 +70,7 @@ const UserProvider = ({ children }) => {
       item.id === user.id ? user : item
     );
     setUsers(usersUpdate);
+    Swal.fire('Usuario actualizado!')
   };
 
   return (

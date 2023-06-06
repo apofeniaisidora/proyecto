@@ -8,9 +8,11 @@ const ServiceCard = ({ servicio }) => {
   return (
     <article className="card">
       <img src={servicio.img} alt="" className="imagencard" />
-      <h3>{servicio.title}</h3>
+      <br></br>
+      <h2>{servicio.title}</h2>
       <p>{servicio.description}</p>
-      <h4>{servicio.price}</h4>
+      <h3>{servicio.price}</h3>
+      <br></br>
       <button className="green boton">Contactar</button>
       <br></br>
       <button className="green boton botonguardar" onClick={() => addFavoritos(servicio)}

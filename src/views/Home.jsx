@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <h1>TERAPIAS DISPONIBLES</h1> 
+      <br></br>
       <input
         type="text"
         placeholder="Buscar..."
@@ -19,7 +19,7 @@ export default function Home() {
         onChange={(e) => setSearchText(e.target.value)}
         className="buscador"
       />
-      <div className="grupocard">
+      <div className="contenedorcard">
         {servicios
           .filter((servicio) =>
             servicio.title.toLowerCase().includes(searchText.toLowerCase())

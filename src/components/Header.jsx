@@ -5,7 +5,6 @@ export default function Header() {
     <div>
       <header>
         <div className="imagenheader header">
-          <h1 className="tituloheader">Terapias</h1>
         </div>
       </header>
     </div>

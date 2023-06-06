@@ -28,10 +28,10 @@ export default function Login() {
   };
 
   return (
-    <div>
+    <div className='cuerpo'>
       <h1>Inicia sesión</h1>
       <form className="formulario" onSubmit={handleSubmit}>
-        <label>
+
           Email
           <input
             type="text"
@@ -39,16 +39,13 @@ export default function Login() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-        </label>
-        <label>
           Contraseña
           <input
-            type="text"
+            type="password"
             placeholder="Contraseña"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-        </label>
         <button type="submit" className="boton green">
           Ingresar
         </button>

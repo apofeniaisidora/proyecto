@@ -29,9 +29,9 @@ export default function Registro() {
 
     if (user) {
       return Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'El email ya está registrado!',
+        icon: "error",
+        title: "Oops...",
+        text: "El email ya está registrado!",
       });
     }
 
@@ -39,28 +39,23 @@ export default function Registro() {
   };
 
   return (
-    <div>
+    <div className="cuerpo">
       <h1>Regístrate</h1>
       <form className="formulario" onSubmit={handleSubmit}>
-        <label>
-          Nombre
-          <input
-            type="text"
-            placeholder="Nombre"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-        <label>
-          Email
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </label>
-        <label>
+        Nombre
+        <input
+          type="text"
+          placeholder="Nombre"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        Email
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
           Contraseña
           <input
             type="password"
@@ -68,8 +63,6 @@ export default function Registro() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-        </label>
-        <label>
           Repita su contraseña
           <input
             type="password"
@@ -77,7 +70,6 @@ export default function Registro() {
             value={repassword}
             onChange={(e) => setRepassword(e.target.value)}
           />
-        </label>
         <button type="submit" className="boton green">
           Registrar
         </button>

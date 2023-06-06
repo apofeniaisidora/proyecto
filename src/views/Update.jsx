@@ -36,34 +36,38 @@ const Update = () => {
   };
 
   return (
-    <div>
+    <div className="cuerpo">
       <h1>Actualizar Servicio</h1>
-      <form className="formdashboard" onSubmit={handleSubmit}>
+      <form className="formulario" onSubmit={handleSubmit}>
+        Título
         <input
           type="text"
           placeholder="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
+        Descripción
         <input
           type="text"
           placeholder="description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
+        Precio
         <input
           type="text"
           placeholder="price"
           value={price}
           onChange={(e) => setPrice(e.target.value)}
         />
+        URL de imagen
         <input
           type=""
           placeholder="img url"
           value={img}
           onChange={(e) => setImg(e.target.value)}
         />
-        <button type="submit">Actualizar</button>
+        <button type="submit" className="boton green">Actualizar</button>
       </form>
     </div>
   );

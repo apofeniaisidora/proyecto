@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-
+import Swal from 'sweetalert2'
 export const ServiceContext = createContext();
 
 const initialServiceState = localStorage.getItem("servicios")
@@ -26,12 +26,14 @@ const ServiceProvider = ({ children }) => {
   }, [servicios]);
 
   const createService = (servicio) => {
-    setServicios([servicio, ...servicios]);
+    setServicios([servicio, ...servicios])
+    Swal.fire('Servicio guardado!')
   };
 
   const deleteService = (id) => {
     const newService = servicios.filter((servicio) => servicio.id !== id);
     setServicios(newService);
+    Swal.fire('Servicio eliminado')
   };
 
   const updateService = newService => {
