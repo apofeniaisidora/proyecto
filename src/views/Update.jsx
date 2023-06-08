@@ -3,11 +3,12 @@ import { useState } from "react";
 import { ServiceContext } from "../context/ServiceContext";
 import { useParams } from "react-router-dom";
 import { UserContext } from "../context/userContext";
+import Swal from "sweetalert2";
 
 const Update = () => {
   const { id } = useParams();
   const { servicios, updateService } = useContext(ServiceContext);
-  const {user} = useContext(UserContext)
+  const { user } = useContext(UserContext);
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -67,7 +68,9 @@ const Update = () => {
           value={img}
           onChange={(e) => setImg(e.target.value)}
         />
-        <button type="submit" className="boton green">Actualizar</button>
+        <button type="submit" className="boton green" onClick={handleSubmit}>
+          Actualizar
+        </button>
       </form>
     </div>
   );
